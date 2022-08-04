@@ -26,7 +26,7 @@
                     <a href="/RandomPage" class="dropdown-item">RandomPage</a>
                     <a href="/Upload" class="dropdown-item">업로드</a>
                     <a href="/License" class="dropdown-item">라이선스</a>
-                    {%if perms.has('ipacl') %}
+                    {%if perms.has('aclgroup') %}
                         <a href="/aclgroup" class="dropdown-item">[관리] ACLGroup</a>
                     {% endif %}
                     {%if perms.has('grant') %}
